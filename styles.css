@@ -264,6 +264,83 @@ section {
     color: var(--highlight-color);
 }
 
+/* History & Lore Page */
+.lore-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.lore-card {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    margin-bottom: 1.5rem;
+}
+
+.lore-card h4 {
+    color: var(--highlight-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.lore-list {
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.lore-list li {
+    margin-bottom: 0.5rem;
+    list-style-type: disc;
+}
+
+.artifact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: var(--accent-color);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-left: 3px;
+}
+
+.timeline-entry {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    position: relative;
+}
+
+.timeline-entry::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--highlight-color);
+    left: -8px;
+    top: 6px;
+}
+
+.timeline-entry h4 {
+    color: var(--highlight-color);
+    margin-bottom: 0.5rem;
+}
+
 /* Footer */
 footer {
     background-color: #000;
